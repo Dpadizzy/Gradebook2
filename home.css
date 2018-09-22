@@ -30,8 +30,9 @@ a:hover {
   min-height: 30px;
   padding: 10px;
   position: fixed;
-  text-align: center;
+  text-align: right;
 }
+
 .nav {
   display: flex;
   justify-content: space-around;
@@ -59,7 +60,7 @@ header {
   background: url('keyvisual.jpg');
   background-size:cover;
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position:left bottom;
   overflow: hidden;
   padding-top: 60px;
 }
@@ -109,8 +110,16 @@ header .profile-image:hover {
 .card:hover {
   border-color: #ff99ff;
 }
+.card-title{
+  text-align: center;
+  border: solid black 3px;
+  border-radius: 10px
+}
 .aboutLink{
-  color: black;
+  color: #404040;
+}
+.aboutLinkText{
+  color: blue;
 }
 
 ul.skills {
@@ -129,18 +138,41 @@ ul.skills {
 
 .features li:nth-child(odd) {
   background: #0399ff;
+  transition: all .5s;
+}
+.manage:hover{
+  transform: scale(1.2);
+  transition: all .5s;
+}
+.addClass:hover{
+  transform: scale(1.2);
+  transition: all .5s;
+}
+.track:hover{
+  transform: scale(1.2);
+  transition: all .5s;
+}
+.notes:hover{
+  transform: scale(1.2);
+  transition: all .5s;
+}
+.reminders:hover{
+  transform: scale(1.2);
+  transition: all .5s;
 }
 
 footer {
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 20px;
+  background: #404040;
 }
 
 footer .copyright {
   top: -8px;
   margin-right: 20px;
   font-size: .75em;
+  color: white;
 }
 
 footer ul {
@@ -163,14 +195,14 @@ a.social {
   opacity: .5;
   transition: all .25s;
 }
-a.twitter {
-  background-image: url(images/twitter.svg);
+a.social {
+  background-image: url(twitter.svg);
 }
 a.linkedin {
-  background-image: url(images/linkedin.svg);
+  background-image: url(linkedin.svg);
 }
 a.github {
-  background-image: url(images/github.svg);
+  background-image: url(github.svg);
 }
 a.social:hover {
   opacity: 1;
