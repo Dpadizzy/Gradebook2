@@ -3,29 +3,115 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-  <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="about.css">
+  <meta charset="UTF-8">
+
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>Awesome Search Box</title>
+
+  <div class="main-nav">
+    <ul class="nav">
+      <li class="name"><a href="index.html">Gradebook2</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="search-box">
+      <input class="search-txt" type="text" name="" placeholder="Type to search"/>
+      <a class="search-btn" href="#">
+      <i class="fas fa-search"></i>
+      </a>
+  </div>
+</div>
+
 </head>
   <body>
-
-
-
-
-
-    <div class="main-nav">
-      <ul class="nav">
-        <li class="name"><a href="index.html">Gradebook2</a></li>
-        <li><a href="dashboard.html">Dashboard</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
 
 <header>
   <h1>About Gradebook2</h1>
 
 </header>
 
+<div class="mission">
+  <h1 class="revealOnScroll" data-animation="LightSpeedIn">Mission</h1>
+  <p>We believe that students find more success when they can easily track their grades.</p>
+
+</div>
+
+<div class="managestu">
+  <h1>Manage Students</h1>
+  <p>Manage students enrolled in your class
+    When students know how they're doing they know what to focus on.</p>
+
+</div>
+<div class="trackgrades">
+  <h1>Track Grades</h1>
+  <p>Easily document and update grades.</p>
+  <p>Students can instantly see thier updated grades.</p>
+</div>
+<div class="reminders">
+  <h1>Reminders</h1>
+  <p>Send reminders to your students when work is due.</p>
+
+</div>
+
+
   </body>
+
+  <script type="text/javascript">
+  function revealOnScroll() {
+     var scrolled = $window.scrollTop();
+     $(".revealOnScroll:not(.animated)").each(function () {
+       var $this     = $(this),
+           offsetTop = $this.offset().top;
+
+       if (scrolled + win_height_padded > offsetTop) {
+         if ($this.data('timeout')) {
+           window.setTimeout(function(){
+             $this.addClass('animated ' + $this.data('animation'));
+           }, parseInt($this.data('timeout'),10));
+         } else {
+           $this.addClass('animated ' + $this.data('animation'));
+         }
+       }
+     });
+//   $function () {
+//     var $window = $(window), win_height_padded = $window.height() * 1.1, isTouch = Modernizr.touch;
+//   if (isTouch) {
+//     $('.revealOnScroll').addClass('animated');
+//   }
+// $window.on('scroll', revealOnScroll);
+// function revealOnScroll() {
+//   var scrolled = $window.scrollTop(), win_height_padded = $window.height() * 1.1;
+// $('.revealOnScroll:not(.animated)').each(function() {
+//   var $this = $(this), offsetTop = $this.offset().top;
+// if (scrolled + win_height_padded > offsetop) {
+//   if ($this.data('timeout')) {
+//     window.setTimeout(function () {
+//       $this.addClass('.animated' + $this.data('antmation'));
+//     }, parseInt($this.data('timeout'), 10));
+//   } else {
+//     $this.addClass('animated' + $this.data('animation'));
+//   }
+// }
+// });
+// $('.revealOnScroll.animated').each(function (index) {
+//   var $this = $(this), offsetTop = $this.offset().top;
+//   if (scrolled + win_height_padded < offsetTop){
+//     $(this) .removeClass('animated fadeInUp flipInX LightSpeedIn');
+//   }
+// });
+//
+// }}
+// revealOnScroll();
+
+
+  </script>
+
+
+
   <footer>
   <ul>
     <li><a href="https://twitter.com/dpadizzy?lang=en" target="
